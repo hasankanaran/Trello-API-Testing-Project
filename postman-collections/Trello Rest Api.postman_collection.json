@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "26f1b544-366d-4ef6-8384-4b30c3308ed0",
+		"name": "Trello Rest Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23979595",
+		"_collection_link": "https://qa-testing-6461.postman.co/workspace/Testing-Api1~158f5c59-b741-47db-8f3b-3f0f0ba27545/collection/23979595-26f1b544-366d-4ef6-8384-4b30c3308ed0?action=share&source=collection_link&creator=23979595"
+	},
+	"item": [
+		{
+			"name": "Create a board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{Base_url}}/1/boards/?key=4eb18a813edb75af7abf1957bd486a0a&name=myboard1&token=ATTAd6aa9c3f43b6e980d30d20c33d1d2828aeaacc5fcf6d183973c5ffe55f14b213008C21FC",
+					"host": [
+						"{{Base_url}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "4eb18a813edb75af7abf1957bd486a0a"
+						},
+						{
+							"key": "name",
+							"value": "myboard1"
+						},
+						{
+							"key": "token",
+							"value": "ATTAd6aa9c3f43b6e980d30d20c33d1d2828aeaacc5fcf6d183973c5ffe55f14b213008C21FC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a board",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{Base_url}}/1/boards/67c45e0abbd8b9a0250c59e3?key={{key}}&token={{token}}",
+					"host": [
+						"{{Base_url}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						"67c45e0abbd8b9a0250c59e3"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View boards",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_url}}/1/members/me/boards?key={{key}}&token={{token}}",
+					"host": [
+						"{{Base_url}}"
+					],
+					"path": [
+						"1",
+						"members",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "key",
+			"value": "4eb18a813edb75af7abf1957bd486a0a",
+			"type": "default"
+		},
+		{
+			"key": "token",
+			"value": "ATTAd6aa9c3f43b6e980d30d20c33d1d2828aeaacc5fcf6d183973c5ffe55f14b213008C21FC",
+			"type": "default"
+		}
+	]
+}
