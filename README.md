@@ -35,3 +35,22 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/hasankanaran/Trello-API-Testing-Project.git
    cd Trello-API-Testing-Project
+   
+##Folder Strucher
+   
+├── tests/                  # Contains all test files
+│   ├── board.test.js       # Tests for board-related endpoints
+│   ├── list.test.js        # Tests for list-related endpoints
+│   └── card.test.js        # Tests for card-related endpoints
+├── utils/                  # Utility functions or helpers
+│   └── apiClient.js        # Axios client for making API requests
+├── postman/                # Postman collection and environment files
+│   ├── Trello-API-Testing-Project.postman_collection.json
+│   └── Trello-API-Testing-Project.postman_environment.json
+├── .env                    # Environment variables (not uploaded to GitHub)
+├── .gitignore              # Specifies files to ignore in Git
+├── package.json            # Node.js dependencies and scripts
+├── README.md               # Project documentation
+└── LICENSE                 # License file (optional)
+
+
